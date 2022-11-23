@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Title -->
+		<title>Crystal Clinic</title>
+
+		<!-- FavIcon -->
+		<link rel="icon" type="image/x-icon" href="./img/favicon.jpg" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Icons -->
+		<script
+			src="https://kit.fontawesome.com/1c1cbe680b.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Burger button -->
+		<button class="burger-btn">
+			<div class="burger-btn__box">
+				<div class="burger-btn__bars"></div>
+			</div>
+		</button>
+
+		<!-- Social Media -->
+		<div class="social-box">
+			<div class="social-box__items">
+				<a
+					href="https://www.facebook.com/profile.php?id=100085627223743"
+					class="social-box__item"
+					target="_blank"
+					><i class="fa-brands fa-facebook-f fa-2xl"></i
+				></a>
+				<a
+					href="https://www.instagram.com/crystal_clinic27/"
+					class="social-box__item"
+					target="_blank"
+					><i class="fa-brands fa-instagram fa-2xl"></i
+				></a>
+			</div>
+		</div>
+
+		<!-- Nawigacja -->
+		<nav class="nav">
+			<div class="nav__items">
+				<a href="#about" class="nav__item">O nas</a>
+				<a href="#offer" class="nav__item">Oferta</a>
+				<a href="#kos" class="nav__item">Cennik</a>
+				<a href="#kos" class="nav__item">Umów się</a>
+				<a href="#kos" class="nav__item">Opinie</a>
+				<a href="#kos" class="nav__item">Galeria</a>
+				<a href="#kos" class="nav__item">Nowości</a>
+				<a href="#kos" class="nav__item">Promocje</a>
+				<a href="#kos" class="nav__item">Voucher</a>
+				<a href="#contact" class="nav__item">Kontakt</a>
+			</div>
+		</nav>
+
+		<!-- header -->
+		<header class="header section">
+			<h1 class="header__heading">Crystal Clinic</h1>
+			<p class="header__text">Wiktoria Misiorna</p>
+			<!-- <a href="#offers" class="header__btn btn-special-animation"
+			>Poznaj ofertę</a
+			> -->
+			<!-- <img src="./img/kobirta.jpg" alt="">	 -->
+
+			<div class="white-block white-block-left"></div>
+		</header>
+
+		<!-- Kontakt -->
+		<section
+			class="contact section-padding section white-sectioon"
+			id="contact"
+		>
+			<div class="white-block white-block-right"></div>
+			<div class="white-block white-block-left"></div>
+
+			<h2 class="section-heading">Kontakt</h2>
+
+			<div class="wrapper">
+				<form class="contact__form">
+					<div class="contact__form-top">
+						<label for="name" class="contact__form-label"
+							>Imię i nazwisko:</label
+						>
+						<input type="text" class="contact__form-input" id="name" />
+
+						<label for="email" class="contact__form-label">Adres e-mail:</label>
+						<input type="text" id="email" class="contact__form-input" />
+					</div>
+
+					<label for="msg" class="contact__form-label">Wiadomość:</label>
+					<textarea id="msg" class="contact__form-textarea"></textarea>
+
+					<button type="submit" class="contact__form-btn btn-special-animation">
+						Wyślij
+					</button>
+				</form>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.8247808518176!2d17.004422451981185!3d52.08291947963422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470500c5cce3372f%3A0x5dd07b03282139cd!2sSalon%20Fryzjerski%20Edwin%20Nowacki!5e0!3m2!1spl!2spl!4v1669157928700!5m2!1spl!2spl"
+					width="100%"
+					height="450"
+					style="border: 0"
+					allowfullscreen="23"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__boxes">
+					<div class="footer__box">
+						<h3 class="footer__box-title">
+							<i class="fas fa-kiwi-bird"></i> TP Co.
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam
+							commodi est tempora eveniet accusantium iure natus doloremque eius
+							adipisci!
+						</p>
+					</div>
+
+					<div class="footer__box footer__box-desktop">
+						<h3 class="footer__box-title">O firmie</h3>
+						<ul class="footer__box-list">
+							<li class="footer__box-list-item"><a href="#">O nas</a></li>
+							<li class="footer__box-list-item"><a href="#">Zarząd</a></li>
+							<li class="footer__box-list-item"><a href="#">Kariera</a></li>
+							<li class="footer__box-list-item"><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<hr />
+			<p class="footer__bottom-text">
+				&copy; <span class="footer__year"></span> CRYSTAL CLINIC
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

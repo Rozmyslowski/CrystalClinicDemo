@@ -412,15 +412,18 @@ body {
 	&__form-top {
 		display: flex;
 		flex-direction: column;
+		
 	}
 
 	&__form-label {
 		margin-bottom: 0.5em;
 		text-transform: uppercase;
+		
 	}
 
 	&__form-input {
 		@include contactForm;
+		
 	}
 
 	&__form-textarea {

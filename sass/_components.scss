@@ -9,6 +9,7 @@
     height: 40px;
     width: 60%;
     background-color: $pure-white;
+   
 
     &-left{
         bottom: 0;
@@ -21,6 +22,7 @@
         right: -50px;
         transform: skew(45deg);
     }
+   
 }
 
 .btn-special-animation{
@@ -58,11 +60,12 @@
     text-transform: uppercase;
     text-align: center;
     color: rgb(221, 175, 24);
+    font-family: "Playfair Display", serif;
     letter-spacing: 2px;
 }
 
 .section-padding{
-    padding: 6em 2em;
+    padding: 3em 1em;
 }
 
 @media (min-width: 768px) {
@@ -71,7 +74,7 @@
     }
 
     .section-padding{
-        padding: 8em 2em;
+        padding: 4em 2em;
     }
 }
 
@@ -81,7 +84,7 @@
     }
 
     .section-padding{
-        padding: 10em 2em;
+        padding: 8em 2em;
     }
     
 }

@@ -347,10 +347,13 @@ body {
 }
 
 // Oferta
+
 .offer {
+
 	&__card {
 		position: relative;
 		margin: 1em 0;
+		height: 200px;
 		color: $pure-white;
 		text-align: center;
 		perspective: 1000px;
@@ -631,7 +634,18 @@ body {
 		}
 		&__card {
 			margin: 1em;
-			width: 45%;
+			width: 20%;
+		}
+	}
+	.offer {
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		&__card {
+			margin: 1em;
+			width: 20%;
 		}
 	}
 }
@@ -640,6 +654,11 @@ body {
 	.about {
 		&__card {
 			width: 30%;
+		}
+	}
+	.offer {
+		&__card {
+			width: 20%;
 		}
 	}
 }

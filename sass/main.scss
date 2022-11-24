@@ -18,7 +18,7 @@ html {
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.6rem;
-
+	
 }
 
 // Burger button
@@ -357,11 +357,12 @@ body {
 		color: $pure-white;
 		text-align: center;
 		perspective: 1000px;
-
-		a {
-			font-size: 2.8em;
-			text-decoration: none;
-			color: #fff;
+		background-color: #333;
+		border-radius: 8px;
+		
+		
+		i{
+			margin-top: -0.3em;
 		}
 
 		&-img {
@@ -372,31 +373,16 @@ body {
 			transition: transform 1s, opacity 1s;
 			position: relative;
 
-			&--first {
-				background-image: $light-blue-gradient, url(../img/kobirta.jpg);
-			}
+		
 
 			&-title {
 				font-family: "Open Sans", sans-serif;
 				color: rgb(221, 175, 24);
-				font-size: 2.8rem;
+				font-size: 1.4rem;
+				margin-top: 1em;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-			}
-
-			&-more {
-				font-size: 1em;
-				text-decoration: none;
-				color: #fff;
-				position: absolute;
-				right: 0px;
-				bottom: 0px;
-				padding: 2em;
-			}
-
-			&-more:hover {
-				color: rgb(221, 175, 24);
 			}
 
 			&-info {
@@ -405,10 +391,8 @@ body {
 				right: 30px;
 				font-size: 1.8rem;
 
-				i {
-					font-family: "Open Sans", sans-serif;
-					margin-right: 0.3em;
-				}
+				
+
 			}
 		}
 	}

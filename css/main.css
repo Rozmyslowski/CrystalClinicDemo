@@ -68,7 +68,6 @@
   text-align: center;
   color: #ddaf18;
   font-family: "Playfair Display", serif;
-  letter-spacing: 2px;
 }
 
 .section-padding {
@@ -500,12 +499,12 @@ body {
   text-align: center;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  background-color: #333;
+  border-radius: 8px;
 }
 
-.offer__card a {
-  font-size: 2.8em;
-  text-decoration: none;
-  color: #fff;
+.offer__card i {
+  margin-top: -0.3em;
 }
 
 .offer__card-img {
@@ -520,14 +519,11 @@ body {
   position: relative;
 }
 
-.offer__card-img--first {
-  background-image: linear-gradient(45deg, rgba(33, 35, 36, 0.75), rgba(29, 29, 26, 0.75)), url(../img/kobirta.jpg);
-}
-
 .offer__card-img-title {
   font-family: "Open Sans", sans-serif;
   color: #ddaf18;
-  font-size: 2.8rem;
+  font-size: 1.4rem;
+  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,30 +535,11 @@ body {
           align-items: center;
 }
 
-.offer__card-img-more {
-  font-size: 1em;
-  text-decoration: none;
-  color: #fff;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  padding: 2em;
-}
-
-.offer__card-img-more:hover {
-  color: #ddaf18;
-}
-
 .offer__card-img-info {
   position: absolute;
   bottom: 30px;
   right: 30px;
   font-size: 1.8rem;
-}
-
-.offer__card-img-info i {
-  font-family: "Open Sans", sans-serif;
-  margin-right: 0.3em;
 }
 
 .contact {

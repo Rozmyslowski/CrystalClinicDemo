@@ -484,6 +484,11 @@ body {
           perspective: 1000px;
   background-color: rgba(70, 70, 70, 0.8);
   border-radius: 8px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  cursor: pointer;
 }
 .offer__card i {
   margin-top: -0.3em;
@@ -540,14 +545,46 @@ body {
   right: 30px;
   font-size: 1.8rem;
 }
+.offer__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 
 .contact {
   position: relative;
-  background-color: #fff;
+  background-color: rgb(243, 243, 243);
   overflow: hidden;
 }
 .contact .white-block-left {
   background-color: #2e2e2e;
+}
+.contact__heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.8em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__form {
+  width: 50%;
 }
 .contact__form, .contact__form-top {
   display: -webkit-box;
@@ -568,7 +605,7 @@ body {
   border: none;
   border-radius: 8px;
   font-size: 1.6rem;
-  background-color: rgb(222, 222, 222);
+  background-color: rgb(255, 255, 255);
 }
 .contact__form-textarea {
   margin-bottom: 2em;
@@ -576,7 +613,7 @@ body {
   border: none;
   border-radius: 8px;
   font-size: 1.6rem;
-  background-color: rgb(222, 222, 222);
+  background-color: rgb(255, 255, 255);
   max-width: 100%;
   min-width: 100%;
   width: 100%;
@@ -647,6 +684,9 @@ body {
 .visit-img__option:hover {
   -webkit-box-shadow: 0px 0px 10px 2px rgb(221, 175, 24);
           box-shadow: 0px 0px 10px 2px rgb(221, 175, 24);
+}
+.visit-img a {
+  cursor: pointer;
 }
 
 .image-grid {

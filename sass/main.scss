@@ -361,7 +361,7 @@ body {
 		position: absolute;
 		top: 55%;
 		left: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		p {
 			font-family: "Dancing Script", cursive;
 			z-index: -1000;
@@ -380,6 +380,8 @@ body {
 		perspective: 1000px;
 		background-color: rgba(70, 70, 70, 0.8);
 		border-radius: 8px;
+		transition: transform 0.3s;
+		cursor: pointer;
 
 		i {
 			margin-top: -0.3em;
@@ -410,7 +412,6 @@ body {
 				left: 50%;
 				top: 50%;
 				transform: translate(-50%, -50%);
-
 				width: 100%;
 			}
 
@@ -432,21 +433,44 @@ body {
 			}
 		}
 	}
+	&__card:hover {
+		transform: scale(1.1);
+	}
 }
 
 // Kontakt
 
 .contact {
 	position: relative;
-	background-color: #fff;
+	background-color: rgb(243, 243, 243);
 	overflow: hidden;
+
 	.white-block-left {
 		background-color: $dark;
+	}
+
+	&__heading {
+		font-family: "Open Sans", sans-serif;
+		font-size: 2.8em;
+		padding: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__form {
+		width: 50%;
 	}
 
 	&__form,
 	&__form-top {
 		display: flex;
+
 		flex-direction: column;
 	}
 
@@ -520,6 +544,9 @@ body {
 	}
 	&__option:hover {
 		box-shadow: 0px 0px 10px 2px rgb(221, 175, 24);
+	}
+	a {
+		cursor: pointer;
 	}
 }
 // Galeria

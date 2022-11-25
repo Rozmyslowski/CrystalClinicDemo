@@ -27,7 +27,10 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- Icons -->
 		<script
@@ -193,7 +196,7 @@
 				<div class="offer__text">
 					<p>Crystal</p>
 				</div>
-				
+
 				<div class="offer__cards">
 					<div class="offer__card">
 						<div class="offer__card-img offer__card-img--first">
@@ -264,7 +267,9 @@
 		<section class="visit-img section" id="visit">
 			<div class="white-block white-block-left"></div>
 			<div class="white-block white-block-right"></div>
+
 			<p class="visit-img__title">Umów się</p>
+
 			<p class="visit-img__text">Wybierz wygodną dla ciebie opcje!</p>
 			<div class="visit-img__options">
 				<a
@@ -273,8 +278,10 @@
 					class="visit-img__option"
 					>Booksy</a
 				>
-				<a class="visit-img__option">Zadzwoń do nas!</a>
-				<a class="visit-img__option">Odwiedź nasz salon!</a>
+
+				<a href="#contact" class="visit-img__option">Zadzwoń lub Napisz</a>
+
+				<a href="#contact" class="visit-img__option">Odwiedź nasz salon!</a>
 			</div>
 		</section>
 
@@ -317,38 +324,49 @@
 			id="contact"
 		>
 			<div class="white-block white-block-left"></div>
-
 			<h2 class="section-heading">Kontakt</h2>
-
 			<div class="wrapper">
-				<form class="contact__form">
-					<div class="contact__form-top">
-						<label for="name" class="contact__form-label"
-							>Imię i nazwisko:</label
-						>
-						<input type="text" class="contact__form-input" id="name" />
+				<div class="contact__info"></div>
 
-						<label for="email" class="contact__form-label">Adres e-mail:</label>
-						<input type="text" id="email" class="contact__form-input" />
-					</div>
-
-					<label for="msg" class="contact__form-label">Wiadomość:</label>
-					<textarea id="msg" class="contact__form-textarea"></textarea>
-
-					<button type="submit" class="contact__form-btn btn-special-animation">
-						Wyślij
-					</button>
-				</form>
-				<br />
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.8247808518176!2d17.004422451981185!3d52.08291947963422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470500c5cce3372f%3A0x5dd07b03282139cd!2sSalon%20Fryzjerski%20Edwin%20Nowacki!5e0!3m2!1spl!2spl!4v1669157928700!5m2!1spl!2spl"
-					width="100%"
+					width="50%"
 					height="450"
 					style="border: 0"
 					allowfullscreen="23"
 					loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"
 				></iframe>
+
+				<br><br><br><br>
+
+				<div class="contact__container">
+
+					<form class="contact__form">
+						<p class="contact__heading">Napisz do nas</p>
+						<div class="contact__form-top">
+							<label 
+							type="text"
+							for="name" 
+							class="contact__form-label" 
+							placeholder="Imię i Nazwisko">
+							Imię i nazwisko:
+							</label
+							>
+							<input type="text" class="contact__form-input" id="name" />
+
+							<label for="email" class="contact__form-label">Adres e-mail:</label>
+							<input type="text" id="email" class="contact__form-input" />
+						</div>
+
+						<label for="msg" class="contact__form-label">Wiadomość:</label>
+						<textarea id="msg" class="contact__form-textarea"></textarea>
+
+						<button type="submit" class="contact__form-btn btn-special-animation">
+							Wyślij
+						</button>
+					</form>
+				</div>
 			</div>
 		</section>
 

@@ -357,17 +357,20 @@ body {
 .offer {
 	background-color: rgb(255, 255, 255);
 	position: relative;
+	overflow: hidden;
 	&__text {
 		position: absolute;
 		top: 55%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		overflow: hidden;
 		p {
 			font-family: "Dancing Script", cursive;
 			z-index: -1000;
 			letter-spacing: 20px;
 			font-size: 30em;
 			color: rgb(211, 211, 211);
+			overflow: hidden;
 		}
 	}
 

@@ -495,7 +495,7 @@ body {
 }
 .hero-img__text {
   padding: 0em 0;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 .offer {
@@ -721,7 +721,7 @@ body {
 .visit-img {
   position: relative;
   padding: 6em 2em;
-  background-color: rgb(110, 110, 110);
+  background-color: rgb(114, 114, 114);
   text-align: center;
   color: #fff;
   overflow: hidden;
@@ -759,9 +759,9 @@ body {
           align-items: center;
   margin: 3em;
   padding: 2em 4em;
-  background-color: rgb(77, 77, 77);
+  background-color: rgb(138, 138, 138);
   border-radius: 8px;
-  color: rgb(231, 216, 216);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.2em;
   -webkit-transition: -webkit-box-shadow 0.3s;

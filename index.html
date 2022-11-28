@@ -50,16 +50,16 @@
 		<div class="social-box">
 			<div class="social-box__items">
 				<a
-					href="https://www.facebook.com/profile.php?id=100085627223743"
-					class="social-box__item"
-					target="_blank"
-					><i class="fa-brands fa-facebook-f fa-2xl"></i
-				></a>
-				<a
 					href="https://www.instagram.com/crystal_clinic27/"
-					class="social-box__item"
+					class="social-box__item" 
 					target="_blank"
 					><i class="fa-brands fa-instagram fa-2xl"></i
+				></a>
+				<a
+					href="https://www.facebook.com/profile.php?id=100085627223743"
+					class="social-box__item social-box__item-two"
+					target="_blank"
+					><i class="fa-brands fa-facebook-f fa-2xl"></i
 				></a>
 			</div>
 		</div>
@@ -98,14 +98,17 @@
 			<div class="wrapper">
 				<h2 class="section-heading">O nas</h2>
 
+				<div class="about__text">
+					<p>Crystal</p>
+				</div>
+
+
 				<div class="about__cards">
 					<!-- Wiktoria Misiorna -->
 					<div class="about__card" onclick="void(0)">
 						<div class="about__card-img about__card-img--first">
 							<h3 class="about__card-img-title">Wiktoria Misiorna</h3>
-							<p class="about__card-img-info">
-								<i class="fas fa-angle-double-right">Więcej informacji</i>
-							</p>
+							<i class="fa-solid fa-angles-right about__card-img-info"></i>
 						</div>
 
 						<div class="about__card-info">
@@ -128,9 +131,7 @@
 					<div class="about__card" onclick="void(0)">
 						<div class="about__card-img about__card-img--first">
 							<h3 class="about__card-img-title">Aleksandra Wichłacz</h3>
-							<p class="about__card-img-info">
-								<i class="fas fa-angle-double-right">Więcej informacji</i>
-							</p>
+							<i class="fa-solid fa-angles-right about__card-img-info"></i>
 						</div>
 
 						<div class="about__card-info">
@@ -153,9 +154,7 @@
 					<div class="about__card" onclick="void(0)">
 						<div class="about__card-img about__card-img--first">
 							<h3 class="about__card-img-title">Agnieszka Nowak</h3>
-							<p class="about__card-img-info">
-								<i class="fas fa-angle-double-right">Więcej informacji</i>
-							</p>
+							<i class="fa-solid fa-angles-right about__card-img-info"></i>
 						</div>
 
 						<div class="about__card-info">
@@ -182,19 +181,19 @@
 		<section class="hero-img section">
 			<div class="white-block white-block-left"></div>
 			<div class="white-block white-block-right"></div>
-			<p class="hero-img__title">Crystal Clinic</p>
+			<!-- <p class="hero-img__title">Crystal Clinic</p> -->
 
-			<p class="hero-img__text">Precyzja Pasja to my.</p>
+			<p class="hero-img__text">Profesjonalizm & Pasja</p>
 		</section>
 
 		<!-- Oferta -->
 
 		<section class="offer section-padding section white-section" id="offer">
 			<div class="wrapper">
-				<h2 class="section-heading">Oferta</h2>
-
+				<h2 class="section-heading">Oferta </h2>
+				<!-- hr -->
 				<div class="offer__text">
-					<p>Crystal</p>
+					<p>Clinic</p>
 				</div>
 
 				<div class="offer__cards">
@@ -242,27 +241,6 @@
 			</div>
 		</section>
 
-		<!-- <section class="offer section-padding section white-section" id="offer">
-			<div class="wrapper">
-				<h2 class="section-heading">Oferta</h2>
-
-				<div class="offer__card-img offer__card-img--first">
-					<h3 class="offer__card-img-title">Zabiegi na twarz</h3>
-					<a href="#" class="offer__card-img-more">Zobacz Więcej</a>
-				</div>
-				<br />
-				<div class="offer__card-img offer__card-img--first">
-					<h3 class="offer__card-img-title">Zabiegi na ciało</h3>
-					<a href="#" class="offer__card-img-more">Zobacz Więcej</a>
-				</div>
-				<br />
-				<div class="offer__card-img offer__card-img--first">
-					<h3 class="offer__card-img-title">Upiększenie</h3>
-					<a href="#" class="offer__card-img-more">Zobacz Więcej</a>
-				</div>
-			</div>
-		</section> -->
-
 		<!-- Umów sie -->
 		<section class="visit-img section" id="visit">
 			<div class="white-block white-block-left"></div>
@@ -278,16 +256,14 @@
 					class="visit-img__option"
 					>Booksy</a
 				>
-
 				<a href="#contact" class="visit-img__option">Zadzwoń lub Napisz</a>
-
-				<a href="#contact" class="visit-img__option">Odwiedź nasz salon!</a>
+				<a href="#contact" class="visit-img__option">Odwiedź nasz salon</a>
 			</div>
 		</section>
 
 		<!-- Galeria -->
 
-		<section class="section section-padding white-section" id="gallery">
+		<section class="section section-padding section white-section" id="gallery">
 			<div class="wrapper">
 				<h2 class="section-heading">Galeria</h2>
 				<div class="image-grid">
@@ -319,29 +295,43 @@
 		</section>
 
 		<!-- Kontakt -->
-		<section
-			class="contact section-padding section white-sectioon"
-			id="contact"
-		>
+		<section class="contact section-padding section white-section" id="contact">
 			<div class="white-block white-block-left"></div>
 			<h2 class="section-heading">Kontakt</h2>
 			<div class="wrapper">
-				<div class="contact__info"></div>
+				<div class="contact__info">
+					<div class="contact__info-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.8247808518176!2d17.004422451981185!3d52.08291947963422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470500c5cce3372f%3A0x5dd07b03282139cd!2sSalon%20Fryzjerski%20Edwin%20Nowacki!5e0!3m2!1spl!2spl!4v1669157928700!5m2!1spl!2spl"
+							width="100%"
+							height="450"
+							style="border: 0"
+							allowfullscreen="23"
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+					<div class="contact__info-tel">
+						<div class="contact__info-tel-contents">
+							<div class="contact__info-tel-content">
+	
+								<p>T: +48 790 554 161</p>
 
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.8247808518176!2d17.004422451981185!3d52.08291947963422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470500c5cce3372f%3A0x5dd07b03282139cd!2sSalon%20Fryzjerski%20Edwin%20Nowacki!5e0!3m2!1spl!2spl!4v1669157928700!5m2!1spl!2spl"
-					width="50%"
-					height="450"
-					style="border: 0"
-					allowfullscreen="23"
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"
-				></iframe>
+							</div>
+							<div class="contact__info-tel-content">
+								
+								<p>E: crystal@clinic.pl</p>
+							</div>
 
-				<br><br><br><br>
-
+							<div class="contact__info-tel-content">
+								<p>
+								L: Śrem ul. Chopina 4,
+								63-100 Śrem</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="contact__container">
-
 					<form class="contact__form">
 						<p class="contact__heading">Napisz do nas</p>
 						<div class="contact__form-top">
@@ -351,8 +341,7 @@
 							class="contact__form-label" 
 							placeholder="Imię i Nazwisko">
 							Imię i nazwisko:
-							</label
-							>
+							</label>
 							<input type="text" class="contact__form-input" id="name" />
 
 							<label for="email" class="contact__form-label">Adres e-mail:</label>
@@ -367,7 +356,7 @@
 						</button>
 					</form>
 				</div>
-			</div>
+			
 		</section>
 
 		<!-- Footer -->
@@ -403,6 +392,23 @@
 			</p>
 		</footer>
 
+		<!-- <button class="accordion">Section 1</button>
+		<div class="panel">
+		<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Section 2</button>
+		<div class="panel">
+		<p>Lorem ipsum...</p>
+		</div>
+
+		<button class="accordion">Section 3</button>
+		<div class="panel">
+		<p>Lorem ipsum...</p>
+		</div> -->
+
+		<!-- Accordion -->
+		<script src="./js/accordion.js"></script>
 		<!-- Slick -->
 		<script
 			type="text/javascript"

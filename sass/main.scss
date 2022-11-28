@@ -20,6 +20,55 @@ body {
 	font-size: 1.6rem;
 }
 
+
+// ////////////////
+
+
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+  }
+
+
+
+
+
+
+
+///////////
+
+
+
+
+
+
+
+
+
 // Burger button
 
 .burger-btn {
@@ -70,7 +119,16 @@ body {
 	}
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before
+{
+	background-color: $dark;
+}
+
 // Social Media
+
+
 
 .social-box {
 	position: fixed;
@@ -81,22 +139,25 @@ body {
 	border: 1px solid transparent;
 	cursor: pointer;
 	z-index: 1000;
-	color: $pure-white;
+	color: rgb(230, 162, 16);
 
-	a {
+	&__item {
 		padding: 1em;
+		transition: color 0.3s;
+		color: rgb(255, 255, 255);
 	}
 
-	a:link,
-	a:visited,
-	a:active {
-		color: $pure-white;
-		text-decoration: none;
-	}
-	a:hover {
-		color: rgb(221, 175, 24);
+	&__item:hover {
+		color: rgb(230, 162, 16);
 	}
 }
+
+.social-box-color{
+	color: #444;
+}
+
+
+
 
 // Nawigacja
 
@@ -157,11 +218,7 @@ body {
 	animation: navItemsAnimation 0.6s both;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-	background-color: $dark;
-}
+
 
 // Header
 
@@ -222,6 +279,24 @@ body {
 // O nas
 
 .about {
+	position: relative;
+	overflow: hidden;
+	&__text {
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+
+		p {
+			font-family: "Dancing Script", cursive;
+			z-index: -1000;
+			letter-spacing: 20px;
+			font-size: 30em;
+			color: rgb(211, 211, 211);
+			
+		}
+	}
 	&__card {
 		position: relative;
 		margin: 1em 0;
@@ -263,11 +338,6 @@ body {
 				bottom: 30px;
 				right: 30px;
 				font-size: 1.8rem;
-
-				i {
-					font-family: "Open Sans", sans-serif;
-					margin-right: 0.3em;
-				}
 			}
 		}
 
@@ -347,8 +417,8 @@ body {
 		margin-bottom: 0.5em;
 	}
 	&__text {
-		padding: 1em 0;
-		font-size: 1.5em;
+		padding: 0em 0;
+		font-size: 2em;
 	}
 }
 
@@ -358,19 +428,22 @@ body {
 	background-color: rgb(255, 255, 255);
 	position: relative;
 	overflow: hidden;
+
+
 	&__text {
 		position: absolute;
 		top: 55%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		overflow: hidden;
+		
+
 		p {
 			font-family: "Dancing Script", cursive;
 			z-index: -1000;
 			letter-spacing: 20px;
 			font-size: 30em;
 			color: rgb(211, 211, 211);
-			overflow: hidden;
+			
 		}
 	}
 
@@ -435,7 +508,9 @@ body {
 				font-size: 1.8rem;
 			}
 		}
+
 	}
+	
 	&__card:hover {
 		transform: scale(1.1);
 	}
@@ -451,6 +526,37 @@ body {
 	.white-block-left {
 		background-color: $dark;
 	}
+	&__info{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		&-map{
+			
+			width: 50%;
+			height: 450px;
+			
+		}
+		&-tel{
+			width: 50%;
+			height: 450px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&-contents{
+				padding: 4em;
+			}
+			&-content{
+				display: flex;
+				
+				margin: 2em;
+				font-size: 1.4em;
+			}
+
+		}
+	}
+
 
 	&__heading {
 		font-family: "Open Sans", sans-serif;
@@ -513,7 +619,7 @@ body {
 .visit-img {
 	position: relative;
 	padding: 6em 2em;
-	background-color: #333;
+	background-color: rgb(110, 110, 110);
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
@@ -537,16 +643,16 @@ body {
 		justify-content: center;
 		align-items: center;
 		margin: 3em;
-		width: 200px;
-		height: 100px;
-		background-color: rgb(59, 58, 58);
+		padding: 2em 4em;
+		background-color: rgb(77, 77, 77);
 		border-radius: 8px;
-		color: #fff;
+		color: rgb(231, 216, 216);
 		text-decoration: none;
 		font-size: 1.2em;
+		transition: box-shadow 0.3s;
 	}
 	&__option:hover {
-		box-shadow: 0px 0px 10px 2px rgb(221, 175, 24);
+		box-shadow: 0px 0px 10px 2px rgb(54, 54, 54);
 	}
 	a {
 		cursor: pointer;

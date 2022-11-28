@@ -332,30 +332,52 @@
 					</div>
 				</div>
 				<div class="contact__container">
-					<form class="contact__form">
-						<p class="contact__heading">Napisz do nas</p>
-						<div class="contact__form-top">
-							<label 
-							type="text"
-							for="name" 
-							class="contact__form-label" 
-							placeholder="Imię i Nazwisko">
-							Imię i nazwisko:
-							</label>
-							<input type="text" class="contact__form-input" id="name" />
+					<form 
+					id="contactform" 
+					action="https://formsubmit.io/send/testcrystal@wp.pl" 
+					method="POST"
+					class="contact__form">
 
-							<label for="email" class="contact__form-label">Adres e-mail:</label>
-							<input type="text" id="email" class="contact__form-input" />
+						<p class="contact__heading">Napisz do nas</p>
+
+						<div class="contact__form-top">
+							<input 
+							name="name" 
+							type="text" 
+							id="name"
+							class="contact__form-input" 
+							placeholder="Imię i Nazwisko"/>
+
+							<input 
+							name="email" 
+							type="email" 
+							id="email"	 
+							class="contact__form-input" 
+							placeholder="Adres E-mail"/>
+
 						</div>
 
-						<label for="msg" class="contact__form-label">Wiadomość:</label>
-						<textarea id="msg" class="contact__form-textarea"></textarea>
+						<textarea
+						name="comment" 
+						id="comment" 
+						rows="3"
+						class="contact__form-textarea " 
+						placeholder="Wiadomość"></textarea>
 
-						<button type="submit" class="contact__form-btn btn-special-animation">
-							Wyślij
-						</button>
+						<input name="_formsubmit_id" type="text" style="display:none">
+
+					
+						<input 
+						class="contact__form-btn btn-special-animation" 
+						value="Wyślij" 
+						type="submit">
 					</form>
 				</div>
+
+				
+    
+
+
 			
 		</section>
 

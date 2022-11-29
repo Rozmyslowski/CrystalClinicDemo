@@ -184,7 +184,7 @@ body {
 		display: block;
 		margin: 0.5em 0;
 		padding: 0.5em 2em;
-		font-size: 2.8rem;
+		font-size: 2.2rem;
 		color: $pure-white;
 		text-decoration: none;
 
@@ -536,9 +536,7 @@ body {
 		}
 
 		&__info{
-			&-map{
-
-			}
+			
 			&-content{
 				display: flex;
 				flex-direction: column;
@@ -711,6 +709,11 @@ body {
 	}
 }
 @media (min-width:567px){
+	.nav{
+		&__item{
+			font-size: 2.8rem;
+		}
+	}
 	.header{
 		img{
 			width: 100%;
@@ -759,6 +762,7 @@ body {
 				text-decoration: none;
 			}
 		}
+		
 	}
 	.about {
 		&__cards {

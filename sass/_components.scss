@@ -92,7 +92,8 @@
 
     .footer {
         color: $pure-white;
-        background-color: $dark;
+        background-color: rgb(26, 24, 24);
+		
     
         .wrapper {
             padding: 6em 2em 2em;
@@ -100,6 +101,7 @@
     
         &__box {
             font-size: 1.4rem;
+            
         }
     
         &__box-desktop {
@@ -113,7 +115,7 @@
         }
     
         &__box-social {
-            margin: 2em 0 1em;
+            margin: 4em 0 1em;
         }
     
         &__box-link {

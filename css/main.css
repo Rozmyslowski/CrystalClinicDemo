@@ -88,7 +88,7 @@
 }
 .footer {
   color: #fff;
-  background-color: #2e2e2e;
+  background-color: rgb(26, 24, 24);
 }
 .footer .wrapper {
   padding: 6em 2em 2em;
@@ -105,7 +105,7 @@
   text-transform: uppercase;
 }
 .footer__box-social {
-  margin: 2em 0 1em;
+  margin: 4em 0 1em;
 }
 .footer__box-link {
   padding: 0 0.3em;
@@ -540,6 +540,9 @@ body {
   padding: 0em 0;
   font-size: 1.2em;
 }
+.hero-img .white-block-left {
+  background-color: rgb(243, 243, 243);
+}
 
 .offer {
   background-color: rgb(255, 255, 255);
@@ -642,7 +645,7 @@ body {
   overflow: hidden;
 }
 .contact .white-block-left {
-  background-color: #2e2e2e;
+  background-color: rgb(26, 24, 24);
 }
 .contact__info-content {
   display: -webkit-box;
@@ -833,7 +836,7 @@ body {
   }
   .footer__box {
     margin: 0 2em;
-    width: 25%;
+    width: 30%;
   }
   .footer__box:first-child {
     width: 50%;
@@ -850,6 +853,11 @@ body {
   .footer__box-list-item a {
     color: #eee;
     text-decoration: none;
+    margin: 1em;
+    padding: 0.4em;
+  }
+  .footer__box-list-item a:hover {
+    color: rgb(221, 175, 24);
   }
   .about__cards {
     display: -webkit-box;
@@ -917,9 +925,6 @@ body {
     position: relative;
     background-color: rgb(243, 243, 243);
     overflow: hidden;
-  }
-  .contact .white-block-left {
-    background-color: #2e2e2e;
   }
   .contact__info {
     display: -webkit-box;

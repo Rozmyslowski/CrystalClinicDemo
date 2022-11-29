@@ -427,6 +427,9 @@ body {
 		padding: 0em 0;
 		font-size: 1.2em;
 	}
+	.white-block-left{
+		background-color: rgb(243, 243, 243);
+	}
 }
 
 // Oferta
@@ -532,7 +535,7 @@ body {
 	overflow: hidden;
 
 		.white-block-left {
-			background-color: $dark;
+			background-color: rgb(26, 24, 24);
 		}
 
 		&__info{
@@ -739,7 +742,7 @@ body {
 
 		&__box {
 			margin: 0 2em;
-			width: 25%;
+			width: 30%;
 
 			&:first-child {
 				width: 50%;
@@ -752,14 +755,23 @@ body {
 
 		&__box-list {
 			list-style: none;
+
 		}
 
 		&__box-list-item {
 			margin-bottom: 1em;
+			
 
 			a {
 				color: $light-white;
 				text-decoration: none;
+				margin: 1em;
+				padding: 0.4em;
+				
+			}
+			a:hover{
+				color: rgb(221, 175, 24);
+
 			}
 		}
 		
@@ -837,9 +849,7 @@ body {
 		background-color: rgb(243, 243, 243);
 		overflow: hidden;
 	
-		.white-block-left {
-			background-color: $dark;
-		}
+		
 		&__info{
 			display: flex;
 			flex-direction: row;

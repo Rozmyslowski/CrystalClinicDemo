@@ -531,101 +531,82 @@ body {
 	background-color: rgb(243, 243, 243);
 	overflow: hidden;
 
-	.white-block-left {
-		background-color: $dark;
-	}
-	&__info{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-
-		&-map{
-			
-			width: 50%;
-			height: 450px;
-			
+		.white-block-left {
+			background-color: $dark;
 		}
-		&-tel{
-			width: 50%;
-			height: 450px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			&-contents{
-				padding: 4em;
+
+		&__info{
+			&-map{
+
 			}
 			&-content{
 				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				color: $dark;
+				padding: 2em;
+				
 			
-				margin: 2em;
-				font-size: 1.4em;
-				a{
-					text-decoration: none;
-					color: rgb(0, 0, 0);
-				}
+			}
+			&-text{
+				text-decoration: none;
+				color: $dark;
+				padding: 1.1em;
 			}
 
 		}
-	}
+
+		&__heading {
+			font-family: "Open Sans", sans-serif;
+			font-size: 2em;
+			margin: 1em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
 
 
-	&__heading {
-		font-family: "Open Sans", sans-serif;
-		font-size: 2.8em;
-		padding: 1em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+		&__form,
+		&__form-top {
+			display: flex;
+			flex-direction: column;
+		}
 
-	&__container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	&__form {
-		width: 50%;
-	}
+		&__form-label {
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
 
-	&__form,
-	&__form-top {
-		display: flex;
+		&__form-input {
+			@include contactForm;
+		}
 
-		flex-direction: column;
-	}
+		&__form-textarea {
+			@include contactForm;
 
-	&__form-label {
-		margin-bottom: 0.5em;
-		text-transform: uppercase;
-	}
+			max-width: 100%;
+			min-width: 100%;
+			width: 100%;
+			min-height: 150px;
+			max-height: 300px;
+		}
+		&__form-btn {
+			align-self: flex-end;
+			padding: 1em;
+			width: 100%;
+			max-width: 300px;
 
-	&__form-input {
-		@include contactForm;
-	}
-
-	&__form-textarea {
-		@include contactForm;
-
-		max-width: 100%;
-		min-width: 100%;
-		width: 100%;
-		min-height: 150px;
-		max-height: 300px;
-	}
-	&__form-btn {
-		align-self: flex-end;
-		padding: 1em;
-		width: 100%;
-		max-width: 300px;
-
-		color: $pure-white;
-		border: none;
-		border-radius: 8px;
-		background-color: rgb(221, 175, 24);
-		cursor: pointer;
-	}
+			color: $pure-white;
+			border: none;
+			border-radius: 8px;
+			background-color: rgb(221, 175, 24);
+			cursor: pointer;
+		}
+	
 }
+
 
 // wizyta
 
@@ -827,6 +808,7 @@ body {
 			font-size: 2em;
 		}
 	}
+	
 }
 
 @media (min-width: 1100px) {
@@ -845,6 +827,47 @@ body {
 			width: 50%;
 		}
 	}
+	.contact {
+		position: relative;
+		background-color: rgb(243, 243, 243);
+		overflow: hidden;
+	
+		.white-block-left {
+			background-color: $dark;
+		}
+		&__info{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			&-content{
+				font-size: 1.2em;
+			}
+
+			&-map{
+				
+				width: 60%;
+				height: 450px;
+				
+			}	
+		}
+	
+		&__heading {
+		
+			font-size: 2.8em;
+			
+		}
+	
+		&__container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&__form {
+			width: 50%;
+		}	
+	}
+
 }
 
 @media screen and (max-width: 1024px) {

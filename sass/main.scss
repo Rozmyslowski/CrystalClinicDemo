@@ -18,6 +18,7 @@ html {
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.6rem;
+	
 }
 
 
@@ -235,6 +236,7 @@ body {
 	background: $blue-gradient;
 	@include heroImages("../img/kobirta.jpg");
 	background-attachment: scroll;
+	overflow: hidden;
 
 	h1 {
 		display: none;
@@ -286,6 +288,7 @@ body {
 		top: 55%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		
 		p {
 			font-family: "Dancing Script", cursive;
 			z-index: -1000;
@@ -420,9 +423,9 @@ body {
 		margin-bottom: 0.5em;
 	}
 	&__text {
-		font-family: "Playfair Display", serif;
+		
 		padding: 0em 0;
-		font-size: 1.6em;
+		font-size: 1.2em;
 	}
 }
 
@@ -459,7 +462,7 @@ body {
 		color: $pure-white;
 		text-align: center;
 		perspective: 1000px;
-		background-color: rgba(32, 32, 32, 0.8);
+		background-color: rgba(0, 0, 0, 0.8);
 		border-radius: 8px;
 		transition: transform 0.3s;
 		cursor: pointer;
@@ -626,50 +629,59 @@ body {
 
 // wizyta
 
-.visit-img {
+
+
+
+.visit {
 	position: relative;
 	padding: 6em 2em;
 	background-color: rgb(29, 29, 29);
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
-	&__card{
-		
-
-	}
-
-
-	&__text {
-		padding: 1em 0;
-		font-size: 1.5em;
-	}
-	&__options {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 1em;
-	}
-	&__option {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		
-		margin: 3em;
-		padding: 2em 4em;
-		background-color: rgb(49, 49, 49);
+	&__card {
+		position: relative;
+		margin: 1em 0;
+		height: 150px;
+		color: $pure-white;
+		text-align: center;
+		perspective: 1000px;
+		background-color: rgb(27, 27, 27);
 		border-radius: 8px;
-		color: rgb(255, 255, 255);
-		text-decoration: none;
-		font-size: 1.2em;
-		transition: box-shadow 0.3s;
-	}
-	&__option:hover {
-		box-shadow: 0px 0px 10px 2px rgb(54, 54, 54);
-	}
-	a {
+		transition: transform 0.3s;
 		cursor: pointer;
+		&-box{
+			
+			a{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				font-size: 1.2em;
+				padding: 4em;
+				
+			}
+		}
+	}
+	
+	&__text{
+		font-size: 1.2em;
+		padding: 2em;
+		margin-top: -5em;
+	}
+	&__option{
+		
+		text-decoration: none;
+		color: #ccc;
+
+	}
+	
+	&__card:hover {
+		transform: scale(1.1);
 	}
 }
+
+
 
 // Galeria
 
@@ -685,6 +697,7 @@ body {
 	grid-template-columns: repeat(var(--num-cols), 1fr);
 	grid-auto-rows: var(--row-height);
 	gap: var(--gap);
+	overflow: hidden;
 
 	img {
 		width: 100%;
@@ -790,6 +803,18 @@ body {
 					width: 100%;
 				}
 			}
+		}
+	}
+	.visit {
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		&__card {
+			margin: 1em;
+			width: 20%;
+			
 		}
 	}
 	.header{

@@ -60,6 +60,13 @@
 					target="_blank"
 					><i class="fa-brands fa-facebook-f fa-2xl"></i
 				></a>
+				<a
+					href="https://www.facebook.com/profile.php?id=100085627223743"
+					class="social-box__item social-box__item-two"
+					aria-label="facebook"
+					target="_blank"
+					></i
+				></a>
 			</div>
 		</div>
 
@@ -74,21 +81,21 @@
 		<!-- Nawigacja -->
 		<nav class="nav">
 			<div class="nav__items">
-				
+				<a href="./index.html#home" class="nav__item">Home</a>
 				<a href="./index.html#about" class="nav__item">O nas</a>
 				<a href="./index.html#offer" class="nav__item">Oferta</a>
 				<a href="./price.html" class="nav__item">Cennik</a>
 				<a href="./index.html#visit" class="nav__item">Umów się</a>
 				<!-- <a href="./index.html#gallery" class="nav__item">Galeria</a> -->
-				<a href="./index.html" class="nav__item">Nowości</a>
-				<a href="./index.html" class="nav__item">Promocje</a>
+				<a href="./news.html" class="nav__item">Nowości</a>
+				<a href="./sale.html" class="nav__item">Promocje</a>
 				<!-- <a href="./index.html#voucher" class="nav__item">Voucher</a> -->
 				<a href="./index.html#contact" class="nav__item">Kontakt</a>
 			</div>
 		</nav>
 
 		<!-- header -->
-		<header class="header section">
+		<header class="header section" id="Home">
 			<img src="./logo/CRYSTAL CLINIC.svg" alt="" />
 
 			<h1>crystal clinic wiktoria misiorna</h1>
@@ -283,17 +290,23 @@
 							href="https://booksy.com/pl-pl/?export_hash=63efa3e34097aa5f4d60&tid=63efa3e34097aa5f4d60&_branch_match_id=1123203684671732415&utm_source=Google%20Ads&utm_campaign=%5BPL%5D%20Booksy%20Brand&utm_medium=landing%20page&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVNzavsigM8Df1L0myT60oyC8qic9ILM6wNTNOTUs0TjU2MbA0T0w0TTNJMTNQK8lMwSoBAGEeEHtcAAAA"
 							targer="_blank"
 							class="visit__option"
-							>Booksy</a>
+							class="visit__card-booksy"
+							><img src="./logo/booksy.svg"  alt=""></a>
 						</div>
 					</div>
 					<div class="visit__card">
 						<div class="visit__card-box ">
-							<a href="#contact" class="visit__option">Zadzwoń lub Napisz</a>
+							<a href="#contact" class="visit__option"><i class="fa-solid fa-phone fa-xl"></i></a>
 						</div>
 					</div>
 					<div class="visit__card">
 						<div class="visit__card-box ">
-							<a href="#contact" class="visit__option">Odwiedź nasz salon</a>
+							<a href="#write" class="visit__option"><i class="fa-solid fa-pen-to-square fa-xl"></i> </a>
+						</div>
+					</div>
+					<div class="visit__card">
+						<div class="visit__card-box ">
+							<a href="#contact" class="visit__option"><i class="fa-solid fa-map-pin fa-xl"></i></a>
 						</div>
 					</div>
 				</div>
@@ -361,13 +374,13 @@
 						<div class="contact__info">
 							<div class="contact__info-content">
 								<a class="contact__info-text" href="tel:+48 790 554 161"><i class="fa-solid fa-phone"></i> +48 790 554 161</a>
-								<p class="contact__info-text" ><i class="fa-solid fa-paper-plane"></i> crystal@clinic.pl</p>
+								<p class="contact__info-text" ><i class="fa-solid fa-pen-to-square"></i> crystal@clinic.pl</p>
 								<p class="contact__info-text"><i class="fa-solid fa-map-pin"></i> Śrem ul. Chopina 4, 63-100 Śrem</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="contact__container">
+				<div class="contact__container" id="write">
 					<form 
 					id="contactform" 
 					action="https://formsubmit.io/send/testcrystal@wp.pl" 

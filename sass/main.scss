@@ -372,6 +372,8 @@ body {
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
+	
+	
 	&__title {
 		font-family: "Playfair Display", serif;
 		color: rgb(221, 175, 24);
@@ -381,6 +383,9 @@ body {
 	&__text {
 		padding: 0em 0;
 		font-size: 1.2em;
+	}
+	.white-block-left {
+		background-color: rgb(243, 243, 243);
 	}
 }
 
@@ -558,10 +563,12 @@ body {
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
+
 	&__card {
 		position: relative;
 		margin: 1em 0;
 		height: 150px;
+		
 		color: $pure-white;
 		text-align: center;
 		perspective: 1000px;
@@ -571,12 +578,22 @@ body {
 		cursor: pointer;
 		&-box {
 			a {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: 100px;
+				}
+				
 				position: absolute;
 				left: 50%;
 				top: 50%;
 				transform: translate(-50%, -50%);
 				font-size: 1.2em;
-				padding: 4em;
+				padding: 2em;
+				
+				
 			}
 		}
 	}
@@ -585,8 +602,10 @@ body {
 		font-size: 1.2em;
 		padding: 2em;
 		margin-top: -5em;
+	
 	}
 	&__option {
+		
 		text-decoration: none;
 		color: #ccc;
 	}

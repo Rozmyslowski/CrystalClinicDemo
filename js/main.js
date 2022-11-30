@@ -8,12 +8,15 @@ const allSections = document.querySelectorAll(".section");
 const footerYear = document.querySelector(".footer__year");
 
 
+
+
 const handleNav = () => {
 	nav.classList.toggle("nav--active");
 
 	navBtnBars.classList.remove("black-bars-color");
     socialItem.classList.remove("social-box-color");
     socialItemTwo.classList.remove("social-box-color");
+
 
 	allNavItems.forEach((item) => {
 		item.addEventListener("click", () => {
@@ -79,6 +82,21 @@ const handleObserverSocial = () => {
 };
 
 
+window.onscroll = () => {
+	toggleTopButton();
+  }
+  function scrollToTop(){
+	window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+  
+  function toggleTopButton() {
+	if (document.body.scrollTop > 20 ||
+		document.documentElement.scrollTop > 20) {
+	  document.getElementById('back-to-up').classList.remove('display: none;');
+	} else {
+	  document.getElementById('back-to-up').classList.add('display: none;');
+	}
+  }
 
 
 const handleCurrentYear = () => {
@@ -90,3 +108,4 @@ handleCurrentYear();
 navBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleObserver);
 window.addEventListener("scroll", handleObserverSocial);
+window.addEventListener("scroll", handleObserverArrow);

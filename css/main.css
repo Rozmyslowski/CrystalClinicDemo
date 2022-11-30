@@ -145,33 +145,6 @@ body {
   font-size: 1.6rem;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -326,6 +299,21 @@ body {
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 0.6s both;
           animation: navItemsAnimation 0.6s both;
+}
+
+.arrow-box__btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 1em;
+  font-size: 2em;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: rgba(255, 0, 0, 0);
+}
+.arrow-box__btn-color {
+  color: rgb(0, 0, 0);
 }
 
 .header {
@@ -539,9 +527,6 @@ body {
 .hero-img__text {
   padding: 0em 0;
   font-size: 1.2em;
-}
-.hero-img .white-block-left {
-  background-color: rgb(243, 243, 243);
 }
 
 .offer {

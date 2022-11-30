@@ -223,8 +223,9 @@ body {
 .offer{
     position: relative;
     overflow: hidden;
+	
     .white-block-left {
-		background-color: $dark;
+		background-color: rgb(26, 24, 24);
 	}
 
     &__option{

@@ -362,7 +362,7 @@ body {
   overflow: hidden;
 }
 .offer .white-block-left {
-  background-color: #2e2e2e;
+  background-color: rgb(26, 24, 24);
 }
 .offer__option {
   margin: 1em 0;
@@ -416,7 +416,7 @@ body {
   overflow: hidden;
 }
 .contact .white-block-left {
-  background-color: #2e2e2e;
+  background-color: rgb(26, 24, 24);
 }
 .contact__info {
   display: -webkit-box;

@@ -224,8 +224,8 @@ body {
     position: relative;
     overflow: hidden;
 
-    .white-block-left {
-		background-color: $dark;
+	.white-block-left {
+		background-color: rgb(26, 24, 24);
 	}
 
     &__option{
@@ -282,7 +282,7 @@ body {
 	overflow: hidden;
 
 	.white-block-left {
-		background-color: $dark;
+		background-color: rgb(26, 24, 24);
 	}
 	&__info {
 		display: flex;

@@ -108,4 +108,4 @@ handleCurrentYear();
 navBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleObserver);
 window.addEventListener("scroll", handleObserverSocial);
-window.addEventListener("scroll", handleObserverArrow);
+

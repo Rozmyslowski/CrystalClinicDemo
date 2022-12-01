@@ -457,6 +457,7 @@ body {
 }
 .offer__option-heading {
   margin-bottom: 0.5em;
+  text-transform: uppercase;
   font-size: 2.4rem;
   font-weight: 300;
 }

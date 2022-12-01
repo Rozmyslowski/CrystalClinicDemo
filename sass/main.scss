@@ -40,7 +40,7 @@ body {
 	text-align: center;
 	color: $pure-white;
 	background: $blue-gradient;
-	@include heroImages("../img/kobirta.jpg");
+	@include heroImages("../img/diamond.jpg");
 	background-attachment: scroll;
 	overflow: hidden;
 	
@@ -95,7 +95,15 @@ body {
 			transition: transform 1s, opacity 1s;
 
 			&--first {
-				background-image: $light-blue-gradient, url(../img/kobirta.jpg);
+				background-image: $light-blue-gradient, url(../portret/woman.jpg);
+			}
+
+			&--two {
+				background-image: $light-blue-gradient, url(../portret/woman2.jpg);
+			}
+
+			&--three {
+				background-image: $light-blue-gradient, url(../portret/woman3.jpg);
 			}
 
 			&-title {
@@ -179,7 +187,7 @@ body {
 .hero-img {
 	position: relative;
 	padding: 10em 2em;
-	@include heroImages("../img/kobirta.jpg");
+	@include heroImages("../img/lipstick.jpg");
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
@@ -204,7 +212,7 @@ body {
 .voucher-img {
 	position: relative;
 	padding: 10em 2em;
-	@include heroImages("../img/kobirta.jpg");
+	@include heroImages("../img/makeup.jpg");
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
@@ -430,9 +438,20 @@ body {
 			padding: 2em;
 		}
 		&-text {
+			text-align: center;
+			background-color: rgb(255, 255, 255);
+			width: 350px;
+			margin: 1em;
+			border-radius: 8px;
 			text-decoration: none;
 			color: $dark;
 			padding: 1.1em;
+			transition: background-color 0.3s;
+
+			&:hover{
+				background-color: $main-yellow;
+				color: rgb(255, 255, 255);
+			}
 		}
 	}
 

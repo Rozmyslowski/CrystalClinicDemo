@@ -1,6 +1,18 @@
+// Header
+// O nas
+// Hero img
+// Oferta
+// Wizyta
+// Galeria
+// Kontakt
+
+
+
 @import "./colors";
 @import "./components";
 @import "./mixins";
+@import "./nav";
+@import "./header";
 
 *,
 *::before,
@@ -20,175 +32,9 @@ body {
 	font-size: 1.6rem;
 }
 
-// Burger button
-
-.burger-btn {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	padding: 1em;
-	background: none;
-	border: 1px solid transparent;
-	cursor: pointer;
-	z-index: 1000;
-
-	&:focus {
-		outline: none;
-		border: 1px solid transparent;
-	}
-
-	&:hover {
-		.burger-btn__bars::after,
-		.burger-btn__bars::before {
-			width: 100%;
-		}
-	}
-
-	&__box {
-		position: relative;
-		width: 40px;
-		height: 30px;
-	}
-
-	&__bars,
-	&__bars::after,
-	&__bars::before {
-		@include burgerBtn;
-	}
-
-	&__bars {
-		width: 100%;
-		&::after {
-			top: 13px;
-			width: 60%;
-		}
-
-		&::before {
-			top: 27px;
-			width: 30%;
-		}
-	}
-}
-
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-	background-color: $dark;
-}
-
-// Social Media
-
-.social-box {
-	position: fixed;
-	top: 20px;
-	left: 20px;
-	padding: 1em 0;
-	background: none;
-	border: 1px solid transparent;
-	cursor: pointer;
-	z-index: 1000;
-	color: rgb(230, 162, 16);
-
-	&__item {
-		padding: 1em;
-		transition: color 0.3s;
-		color: rgb(255, 255, 255);
-	}
-
-	&__item:hover {
-		color: rgb(230, 162, 16);
-	}
-}
-
-.social-box-color {
-	color: #444;
-}
-
-// Nawigacja
-
-.nav {
-	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-	transform: translateX(100%);
-	transition: 0.5s cubic-bezier(0.65, 0.05, 0.65, 1);
-	background-image: $blue-gradient-solid;
-	z-index: 100;
-
-	&--active {
-		transform: translateX(0);
-	}
-
-	&__item {
-		position: relative;
-		display: block;
-		margin: 0.5em 0;
-		padding: 0.5em 2em;
-		font-size: 2.2rem;
-		color: $pure-white;
-		text-decoration: none;
-
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 3px;
-			height: 100%;
-			background-color: $pure-white;
-			content: "";
-			transform: scaleY(0);
-			transition: transform 0.3s;
-		}
-		&:hover::before {
-			transform: scaleY(1);
-			background-color: rgb(221, 175, 24);
-		}
-	}
-}
-
-@keyframes navItemsAnimation {
-	from {
-		transform: translateX(100%);
-	}
-	to {
-		transform: translateX(0);
-	}
-}
-
-.nav-items-animation {
-	animation: navItemsAnimation 0.6s both;
-}
-
-.arrow-box {
-	&__btn {
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		padding: 1em;
-		font-size: 2em;
-		border: 1px solid transparent;
-		cursor: pointer;
-		z-index: 1000;
-		background-color: rgba(255, 0, 0, 0);
-
-		&-color {
-			color: rgb(255, 255, 255);
-		}
-	}
-}
-
 // Header
 
 .header {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	padding: 2em;
 	height: 100vh;
 	text-align: center;
@@ -197,44 +43,9 @@ body {
 	@include heroImages("../img/kobirta.jpg");
 	background-attachment: scroll;
 	overflow: hidden;
-
-	h1 {
-		display: none;
-	}
+	
 	img {
 		width: 170%;
-	}
-
-	&__heading {
-		font-family: "Playfair Display", serif;
-		font-size: 4.8rem;
-		font-weight: 500;
-		color: rgb(221, 175, 24);
-		text-transform: uppercase;
-	}
-
-	&__text {
-		font-size: 1.4rem;
-		text-transform: uppercase;
-		font-family: "Playfair Display", serif;
-		color: rgb(221, 175, 24);
-	}
-
-	&__btn {
-		margin-top: 2em;
-		padding: 0.8em 1.6em;
-		font-size: 1.4rem;
-		background: $pure-white;
-		border: none;
-		border-radius: 8px;
-		color: $dark;
-		text-decoration: none;
-		text-transform: uppercase;
-		cursor: pointer;
-
-		&::before {
-			background-color: $light-white;
-		}
 	}
 }
 
@@ -289,7 +100,7 @@ body {
 
 			&-title {
 				font-family: "Open Sans", sans-serif;
-				color: rgb(221, 175, 24);
+				color: $main-yellow;
 				font-size: 2.8rem;
 				font-weight: 300;
 			}
@@ -323,7 +134,7 @@ body {
 				transform: translateX(-50%);
 				top: 1.2em;
 				font-family: "Open Sans", sans-serif;
-				color: rgb(221, 175, 24);
+				color: $main-yellow;
 				font-size: 2.8rem;
 				font-weight: 300;
 			}
@@ -376,7 +187,32 @@ body {
 	
 	&__title {
 		font-family: "Playfair Display", serif;
-		color: rgb(221, 175, 24);
+		color: $main-yellow;
+		font-size: 4.8rem;
+		margin-bottom: 0.5em;
+	}
+	&__text {
+		padding: 0em 0;
+		font-size: 1.2em;
+	}
+	.white-block-left {
+		background-color: rgb(255, 255, 255);
+	}
+	
+}
+
+.voucher-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImages("../img/kobirta.jpg");
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+	
+	
+	&__title {
+		font-family: "Playfair Display", serif;
+		color: $main-yellow;
 		font-size: 4.8rem;
 		margin-bottom: 0.5em;
 	}
@@ -458,7 +294,7 @@ body {
 
 			&-title {
 				font-family: "Open Sans", sans-serif;
-				color: rgb(221, 175, 24);
+				color: $main-yellow;
 				font-size: 1.4rem;
 				margin-top: 1em;
 				display: flex;
@@ -480,80 +316,6 @@ body {
 	}
 }
 
-// Kontakt
-
-.contact {
-	position: relative;
-	background-color: rgb(243, 243, 243);
-	overflow: hidden;
-
-	.white-block-left {
-		background-color: rgb(26, 24, 24);
-	}
-
-	&__info {
-		&-content {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			color: $dark;
-			padding: 2em;
-		}
-		&-text {
-			text-decoration: none;
-			color: $dark;
-			padding: 1.1em;
-		}
-	}
-
-	&__heading {
-		font-family: "Open Sans", sans-serif;
-		font-size: 2em;
-		margin: 1em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	&__form,
-	&__form-top {
-		display: flex;
-		flex-direction: column;
-	}
-
-	&__form-label {
-		margin-bottom: 0.5em;
-		text-transform: uppercase;
-	}
-
-	&__form-input {
-		@include contactForm;
-	}
-
-	&__form-textarea {
-		@include contactForm;
-
-		max-width: 100%;
-		min-width: 100%;
-		width: 100%;
-		min-height: 150px;
-		max-height: 300px;
-	}
-	&__form-btn {
-		align-self: flex-end;
-		padding: 1em;
-		width: 100%;
-		margin-bottom: 2em;
-		max-width: 300px;
-
-		color: $pure-white;
-		border: none;
-		border-radius: 8px;
-		background-color: rgb(221, 175, 24);
-		cursor: pointer;
-	}
-}
 
 // wizyta
 
@@ -647,6 +409,82 @@ body {
 	grid-row: span 2;
 }
 
+
+// Kontakt
+.contact {
+	position: relative;
+	background-color: rgb(243, 243, 243);
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: $black-footer;
+	}
+
+	&__info {
+		&-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: $dark;
+			padding: 2em;
+		}
+		&-text {
+			text-decoration: none;
+			color: $dark;
+			padding: 1.1em;
+		}
+	}
+
+	&__heading {
+		font-family: "Open Sans", sans-serif;
+		font-size: 2em;
+		margin: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		@include contactForm;
+	}
+
+	&__form-textarea {
+		@include contactForm;
+
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+		min-height: 150px;
+		max-height: 300px;
+	}
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		margin-bottom: 2em;
+		max-width: 300px;
+
+		color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: $main-yellow;
+		cursor: pointer;
+	}
+}
+
+
 // Footer
 // _components.scss
 
@@ -681,46 +519,6 @@ body {
 	}
 }
 @media (min-width: 768px) {
-	.footer {
-		&__boxes {
-			display: flex;
-			justify-content: space-between;
-		}
-		&__box-desktop {
-			display: block;
-		}
-
-		&__box {
-			margin: 0 2em;
-			width: 30%;
-
-			&:first-child {
-				width: 50%;
-			}
-		}
-
-		&__box-title {
-			font-size: 2.4rem;
-		}
-
-		&__box-list {
-			list-style: none;
-		}
-
-		&__box-list-item {
-			margin-bottom: 1em;
-
-			a {
-				color: $light-white;
-				text-decoration: none;
-				margin: 1em;
-				padding: 0.4em;
-			}
-			a:hover {
-				color: rgb(221, 175, 24);
-			}
-		}
-	}
 	.about {
 		&__cards {
 			display: flex;

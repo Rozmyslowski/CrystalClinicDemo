@@ -1,0 +1,55 @@
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 100vh;
+	text-align: center;
+	color: $pure-white;
+	background: $blue-gradient;
+	
+	background-attachment: scroll;
+	overflow: hidden;
+
+	h1 {
+		display: none;
+	}
+	img {
+		width: 170%;
+	}
+
+	&__heading {
+		font-family: "Playfair Display", serif;
+		font-size: 4.8rem;
+		font-weight: 500;
+		color: $main-yellow;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-family: "Playfair Display", serif;
+		color: $main-yellow;
+	}
+
+	&__btn {
+		margin-top: 2em;
+		padding: 0.8em 1.6em;
+		font-size: 1.4rem;
+		background: $pure-white;
+		border: none;
+		border-radius: 8px;
+		color: $dark;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&::before {
+			background-color: $light-white;
+		}
+	}
+}

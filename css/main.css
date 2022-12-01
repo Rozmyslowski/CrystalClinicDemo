@@ -107,44 +107,63 @@
 .footer__box-social {
   margin: 4em 0 1em;
 }
-.footer__box-link {
+.footer__box-list {
   padding: 0 0.3em;
   color: #fff;
-  font-size: 3.6rem;
+  font-size: 1em;
   text-decoration: none;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-.footer__box-link:first-child {
+.footer__box-list:first-child {
   padding-left: 0;
 }
-.footer__box-link:hover {
-  color: #eee;
+.footer__box-list-link:hover {
+  color: #e6a210;
 }
 .footer__bottom-text {
   padding: 2em;
   text-align: center;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@media (min-width: 768px) {
+  .footer__boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__box-desktop {
+    display: block;
+  }
+  .footer__box {
+    margin: 0 2em;
+    width: 30%;
+  }
+  .footer__box:first-child {
+    width: 50%;
+  }
+  .footer__box-title {
+    font-size: 2.4rem;
+  }
+  .footer__box-list {
+    list-style: none;
+  }
+  .footer__box-list-item {
+    margin-bottom: 1em;
+  }
+  .footer__box-list-item a {
+    color: #eee;
+    text-decoration: none;
+    margin: 1em;
+    padding: 0.4em;
+  }
+  .footer__box-list-item a:hover {
+    color: #e6a210;
+  }
 }
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-}
-
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -204,7 +223,7 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 1000;
-  color: rgb(230, 162, 16);
+  color: #e6a210;
 }
 .social-box__item {
   padding: 1em;
@@ -213,11 +232,11 @@ body {
   color: rgb(255, 255, 255);
 }
 .social-box__item:hover {
-  color: rgb(230, 162, 16);
+  color: #e6a210;
 }
 
 .social-box-color {
-  color: #444;
+  color: #2b2828;
 }
 
 .nav {
@@ -272,7 +291,7 @@ body {
 .nav__item:hover::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  background-color: rgb(221, 175, 24);
+  background-color: #e6a210;
 }
 
 @-webkit-keyframes navItemsAnimation {
@@ -336,10 +355,6 @@ body {
   text-align: center;
   color: #fff;
   background: linear-gradient(45deg, rgba(21, 22, 22, 0.75), rgba(25, 25, 27, 0.75));
-  background-image: linear-gradient(45deg, rgba(21, 22, 22, 0.75), rgba(25, 25, 27, 0.75)), url("../img/kobirta.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   background-attachment: scroll;
   overflow: hidden;
 }
@@ -353,14 +368,14 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 4.8rem;
   font-weight: 500;
-  color: rgb(221, 175, 24);
+  color: #e6a210;
   text-transform: uppercase;
 }
 .header__text {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
-  color: rgb(221, 175, 24);
+  color: #e6a210;
 }
 .header__btn {
   margin-top: 2em;
@@ -376,6 +391,42 @@ body {
 }
 .header__btn::before {
   background-color: #eee;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.header {
+  padding: 2em;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(21, 22, 22, 0.75), rgba(25, 25, 27, 0.75));
+  background-image: linear-gradient(45deg, rgba(21, 22, 22, 0.75), rgba(25, 25, 27, 0.75)), url("../img/kobirta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: scroll;
+  overflow: hidden;
+}
+.header img {
+  width: 170%;
 }
 
 .about {
@@ -430,7 +481,7 @@ body {
 }
 .about__card-img-title {
   font-family: "Open Sans", sans-serif;
-  color: rgb(221, 175, 24);
+  color: #e6a210;
   font-size: 2.8rem;
   font-weight: 300;
 }
@@ -473,7 +524,7 @@ body {
           transform: translateX(-50%);
   top: 1.2em;
   font-family: "Open Sans", sans-serif;
-  color: rgb(221, 175, 24);
+  color: #e6a210;
   font-size: 2.8rem;
   font-weight: 300;
 }
@@ -520,7 +571,7 @@ body {
 }
 .hero-img__title {
   font-family: "Playfair Display", serif;
-  color: rgb(221, 175, 24);
+  color: #e6a210;
   font-size: 4.8rem;
   margin-bottom: 0.5em;
 }
@@ -529,6 +580,31 @@ body {
   font-size: 1.2em;
 }
 .hero-img .white-block-left {
+  background-color: rgb(255, 255, 255);
+}
+
+.voucher-img {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(45deg, rgba(21, 22, 22, 0.75), rgba(25, 25, 27, 0.75)), url("../img/kobirta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.voucher-img__title {
+  font-family: "Playfair Display", serif;
+  color: #e6a210;
+  font-size: 4.8rem;
+  margin-bottom: 0.5em;
+}
+.voucher-img__text {
+  padding: 0em 0;
+  font-size: 1.2em;
+}
+.voucher-img .white-block-left {
   background-color: rgb(243, 243, 243);
 }
 
@@ -603,7 +679,7 @@ body {
 }
 .offer__card-img-title {
   font-family: "Open Sans", sans-serif;
-  color: rgb(221, 175, 24);
+  color: #e6a210;
   font-size: 1.4rem;
   margin-top: 1em;
   display: -webkit-box;
@@ -625,98 +701,6 @@ body {
 .offer__card:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.contact {
-  position: relative;
-  background-color: rgb(243, 243, 243);
-  overflow: hidden;
-}
-.contact .white-block-left {
-  background-color: rgb(26, 24, 24);
-}
-.contact__info-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #2e2e2e;
-  padding: 2em;
-}
-.contact__info-text {
-  text-decoration: none;
-  color: #2e2e2e;
-  padding: 1.1em;
-}
-.contact__heading {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2em;
-  margin: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.contact__form, .contact__form-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.contact__form-label {
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-.contact__form-input {
-  margin-bottom: 2em;
-  padding: 0.6em 1.2em;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.6rem;
-  background-color: rgb(255, 255, 255);
-}
-.contact__form-textarea {
-  margin-bottom: 2em;
-  padding: 0.6em 1.2em;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.6rem;
-  background-color: rgb(255, 255, 255);
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
-  min-height: 150px;
-  max-height: 300px;
-}
-.contact__form-btn {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding: 1em;
-  width: 100%;
-  margin-bottom: 2em;
-  max-width: 300px;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  background-color: rgb(221, 175, 24);
-  cursor: pointer;
 }
 
 .visit {
@@ -810,6 +794,98 @@ body {
   grid-row: span 2;
 }
 
+.contact {
+  position: relative;
+  background-color: rgb(243, 243, 243);
+  overflow: hidden;
+}
+.contact .white-block-left {
+  background-color: rgb(26, 24, 24);
+}
+.contact__info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2e2e2e;
+  padding: 2em;
+}
+.contact__info-text {
+  text-decoration: none;
+  color: #2e2e2e;
+  padding: 1.1em;
+}
+.contact__heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__form, .contact__form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact__form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.contact__form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  background-color: rgb(255, 255, 255);
+}
+.contact__form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+}
+.contact__form-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+  max-width: 300px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #e6a210;
+  cursor: pointer;
+}
+
 @media (min-width: 448px) {
   .offer__card-img-icon {
     width: 50%;
@@ -827,42 +903,6 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .footer__boxes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer__box-desktop {
-    display: block;
-  }
-  .footer__box {
-    margin: 0 2em;
-    width: 30%;
-  }
-  .footer__box:first-child {
-    width: 50%;
-  }
-  .footer__box-title {
-    font-size: 2.4rem;
-  }
-  .footer__box-list {
-    list-style: none;
-  }
-  .footer__box-list-item {
-    margin-bottom: 1em;
-  }
-  .footer__box-list-item a {
-    color: #eee;
-    text-decoration: none;
-    margin: 1em;
-    padding: 0.4em;
-  }
-  .footer__box-list-item a:hover {
-    color: rgb(221, 175, 24);
-  }
   .about__cards {
     display: -webkit-box;
     display: -ms-flexbox;
